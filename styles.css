@@ -1,0 +1,37 @@
+body{
+    margin: 0;
+    background-color: black;
+    overflow: hidden;
+}
+.stars{
+    width: 100vw;
+    height: 100vh;
+    background:
+            radial-gradient(white 1px, transparent 2px) 30px 30px,
+            radial-gradient(white 1px, transparent 2px) 50px 50px,
+            radial-gradient(white 1px, transparent 2px) 90px 130px,
+            radial-gradient(white 1px, transparent 2px) 200px 80px,
+            radial-gradient(white 1px, transparent 2px) 300px 150px,
+            radial-gradient(white 1px, transparent 2px) 400px 200px;
+    background-size: 300px 300px;
+    animation: blink 5s infinite alternate;
+}
+@keyframes blink {
+    0%,100%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0.3;
+    }
+}
+.moon {
+    width: 15rem;
+    height: 15rem;
+    border-radius: 50%;
+    box-shadow: 4rem 0 0 0 #fff77e;
+    position: absolute;
+    top: 10%;
+    right: 10%;
+    z-index: 10;
+    filter: brightness(1.2);
+}
