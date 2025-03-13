@@ -56,22 +56,109 @@ a:hover{
     position: absolute;
     top: 15%;
     right: 10%;
-    z-index: 10;
     filter: brightness(1.2);
     animation: riseAndSet 5s ease infinite;
 }
 .sun{
     background-color: #f39f18 ;
+    width: 26rem;
+    height: 26rem;
+    border-radius: 50%;
+    top: 33%;
+    left: 38%;
+    position: absolute;
+    z-index: 10;
+    box-shadow: 0 0 10px 20px #ec511c;
+    filter: brightness(1.2);
+   /* animation: pulse 2s infinite; */
+    animation: pulse 2s linear infinite;
+}
+.mercury{
+    background-color: #4d5645;
     width: 15rem;
     height: 15rem;
     border-radius: 50%;
     top: 35%;
     left: 43%;
     position: absolute;
-    z-index: 10;
-    filter: brightness(1.2);
-   /* animation: pulse 2s infinite; */
-    animation: pulse 2s linear infinite;
+}
+.venus{
+    border-radius: 50%;
+    background-color: #f5e9c8;
+    width: 15rem;
+    height: 15rem;
+    position: absolute;
+    top: 35%;
+    left: 43%;
+}
+.earth {
+    border-radius: 50%;
+    width: 15rem;
+    height: 15rem;
+    position: absolute;
+    top: 35%;
+    left: 43%;
+    background: radial-gradient(circle at 40% 40%,
+    #3cb371 10%,   /* Grüntöne für Landmassen */
+    #225b99 30%,   /* Blau für Ozeane */
+    #1e4d7a 60%,   /* Dunkleres Blau für Tiefsee */
+    #0f2e4d 100%   /* Sehr dunkles Blau für Schatten-Effekt */
+    );
+    box-shadow: inset -10px -10px 20px rgba(0, 0, 0, 0.5); /* Leichte Schatten für Tiefe */
+}
+.mars{
+    border-radius: 50%;
+    background-color: red;
+    height: 15rem;
+    width: 15rem;
+    position: absolute;
+    top: 35%;
+    left: 43%;
+}
+.jupiter{
+    border-radius: 50%;
+    background-color: #f5e9c8;
+    width: 21rem;
+    height: 21rem;
+    position: absolute;
+    top: 35%;
+    left: 43%;
+}
+.saturn{
+    border-radius: 50%;
+    background-color: #f5e9c8;
+    height: 17rem;
+    width: 17rem;
+    position: absolute;
+    top: 35%;
+    left: 43%;
+}
+.uranus{
+    border-radius: 50%;
+    background-color: #3b82f6;
+    width: 15rem;
+    height: 15rem;
+    position: absolute;
+    top: 35%;
+    left: 43%;
+}
+.neptune{
+    border-radius: 50%;
+    background-color: #1e4d7a;
+    height: 15rem;
+    width: 15rem;
+    position: absolute;
+    top: 35%;
+    left: 43%;
+}
+.pluto{
+    border-radius: 50%;
+    background-color: #f5e9c8;
+    width: 10rem;
+    height: 10rem;
+    position: absolute;
+    top: 35%;
+    left: 43%;
 }
 h1{
     display: flex;
@@ -80,7 +167,6 @@ h1{
     align-items: center;
     color: red;
     animation: changeColor 10s ease infinite;
-
 }
 /** KeyFrame Animationen */
 @keyframes blink {
