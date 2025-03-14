@@ -60,14 +60,13 @@ a:hover{
     animation: riseAndSet 5s ease infinite;
 }
 .sun{
+    top: 30%;
+    left: 38%;
     background-color: #f39f18 ;
     width: 26rem;
     height: 26rem;
-    border-radius: 50%;
-    top: 33%;
-    left: 38%;
     position: absolute;
-    z-index: 10;
+    border-radius: 50%;
     box-shadow: 0 0 10px 20px #ec511c;
     filter: brightness(1.2);
    /* animation: pulse 2s infinite; */
@@ -75,8 +74,8 @@ a:hover{
 }
 .mercury{
     background-color: #4d5645;
-    width: 15rem;
-    height: 15rem;
+    width: 14rem;
+    height: 14rem;
     border-radius: 50%;
     top: 35%;
     left: 43%;
@@ -85,19 +84,19 @@ a:hover{
 .venus{
     border-radius: 50%;
     background-color: #f5e9c8;
-    width: 15rem;
-    height: 15rem;
+    width: 18rem;
+    height: 18rem;
     position: absolute;
     top: 35%;
-    left: 43%;
+    left: 42%;
 }
 .earth {
     border-radius: 50%;
-    width: 15rem;
-    height: 15rem;
+    width: 18rem;
+    height: 18rem;
     position: absolute;
     top: 35%;
-    left: 43%;
+    left: 42%;
     background: radial-gradient(circle at 40% 40%,
     #3cb371 10%,   /* Grüntöne für Landmassen */
     #225b99 30%,   /* Blau für Ozeane */
@@ -109,8 +108,8 @@ a:hover{
 .mars{
     border-radius: 50%;
     background-color: red;
-    height: 15rem;
-    width: 15rem;
+    height: 16rem;
+    width: 16rem;
     position: absolute;
     top: 35%;
     left: 43%;
@@ -118,47 +117,47 @@ a:hover{
 .jupiter{
     border-radius: 50%;
     background-color: #f5e9c8;
-    width: 21rem;
-    height: 21rem;
+    width: 24rem;
+    height: 24rem;
     position: absolute;
     top: 35%;
-    left: 43%;
+    left: 39%;
 }
 .saturn{
     border-radius: 50%;
     background-color: #f5e9c8;
-    height: 17rem;
-    width: 17rem;
+    height: 22rem;
+    width: 22rem;
     position: absolute;
     top: 35%;
-    left: 43%;
+    left: 40%;
 }
 .uranus{
     border-radius: 50%;
     background-color: #3b82f6;
-    width: 15rem;
-    height: 15rem;
+    width: 20rem;
+    height: 20rem;
     position: absolute;
     top: 35%;
-    left: 43%;
+    left: 41%;
 }
 .neptune{
     border-radius: 50%;
     background-color: #1e4d7a;
-    height: 15rem;
-    width: 15rem;
+    height: 20rem;
+    width: 20rem;
     position: absolute;
     top: 35%;
-    left: 43%;
+    left: 41%;
 }
 .pluto{
     border-radius: 50%;
     background-color: #f5e9c8;
-    width: 10rem;
-    height: 10rem;
+    width: 12rem;
+    height: 12rem;
     position: absolute;
     top: 35%;
-    left: 43%;
+    left: 45%;
 }
 h1{
     display: flex;
