@@ -59,15 +59,20 @@ a:hover{
     filter: brightness(1.2);
     animation: riseAndSet 5s ease infinite;
 }
+/*x, y , blur, spread*/
 .sun{
-    top: 30%;
-    left: 38%;
-    background-color: #f39f18 ;
-    width: 26rem;
-    height: 26rem;
+    top: 34%;
+    left: 39%;
+    background-color: #FFFF99 ;
+    width: 22rem;
+    height: 22rem;
     position: absolute;
     border-radius: 50%;
-    box-shadow: 0 0 10px 20px #ec511c;
+    box-shadow: inset 0 0 10px 70px #FFCC00,
+    0 0 10px 20px #FF6600,
+    0 0 10px 30px #FF0000,
+    0 0 10px 70px #ec511c,
+    0 0 10px 80px #FFCC00;
     filter: brightness(1.2);
    /* animation: pulse 2s infinite; */
     animation: pulse 2s linear infinite;
