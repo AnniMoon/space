@@ -175,15 +175,10 @@ a:hover{
     top: 35%;
     left: 41%;
 }
-.neptune-ring{
-    width: 370px;
-    height: 305px;
-    border: solid 50px #b8b08d;
-    border-radius: 50%;
-    top: 200px;
-    left: 550px;
-    position: absolute;
-    transform: rotate3d(1, 0, 0, 75deg);
+.neptune-ring-front{
+
+}
+.neptune-ring-back{
 
 }
 .pluto{
