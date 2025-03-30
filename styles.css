@@ -81,37 +81,35 @@ a:hover{
     animation: pulse 2s linear infinite;
 }
 .mercury{
-    background-color: #4d5645;
     width: 14rem;
     height: 14rem;
     border-radius: 50%;
     top: 35%;
     left: 43%;
     position: absolute;
-    box-shadow: inset -30px 0 0 0 rgba(0, 0, 0, 0.5);
+    box-shadow: inset -30px 0 20px 0 rgba(0, 0, 0, 0.5);
+    background: radial-gradient(circle at center, #2B2B2B 5%, #555555 35%, #808080 55%, #BFBFBF 75%);
 }
 .venus{
     border-radius: 50%;
-    background: radial-gradient(circle at top,
-    #e8c28f,
-    #644d28,
-    #e8c28f,
-    #f5f5dc,
-    #e8c28f,
-    #f5f5dc,
-    #e8c28f,
-    #644d28,
-    #f5f5dc,
-    #644d28,
-    #e8c28f
-    );
-    box-shadow: 20px 20px 20px -10px rgb(197, 197, 192),
-    inset 20px 20px 20px 10px #232321;
+    background:
+            radial-gradient(circle at top, #e8c28f 20%, #644d28 30%, #f5f5dc 40%, #e8c28f 50%, #644d28 60%, #e8c28f 70%);
+    box-shadow:inset -20px 0 20px 10px rgb(0, 0, 0, 0.3);
     width: 18rem;
     height: 18rem;
     position: absolute;
     top: 35%;
     left: 42%;
+}
+.mars{
+    border-radius: 50%;
+    height: 16rem;
+    width: 16rem;
+    position: absolute;
+    top: 35%;
+    left: 43%;
+    box-shadow:inset -10px 0 20px 10px rgb(0, 0, 0, 0.3);
+    background: radial-gradient(circle at center, #d76b42 10%, #b74820 20%, #862d0c 40%, #b42c2c 60%);
 }
 .earth {
     border-radius: 50%;
@@ -120,43 +118,49 @@ a:hover{
     position: absolute;
     top: 35%;
     left: 42%;
-    background: radial-gradient(circle at 40% 40%,
-    #3cb371 10%,   /* Grüntöne für Landmassen */
-    #225b99 30%,   /* Blau für Ozeane */
-    #1e4d7a 60%,   /* Dunkleres Blau für Tiefsee */
-    #0f2e4d 100%   /* Sehr dunkles Blau für Schatten-Effekt */
+    background:
+            radial-gradient(circle at 40% 40%,
+    #3cb371 10%,
+    #225b99 30%,
+    #1e4d7a 50%,
+    #0f2e4d 70%,
+    #072441 90%
     );
-    box-shadow: inset -10px -10px 20px rgba(0, 0, 0, 0.5); /* Leichte Schatten für Tiefe */
+    box-shadow: inset -10px -10px 20px rgba(0, 0, 0, 0.5),
+    inset 10px -10px 20px rgba(0, 0, 0, 0.5);
 }
-.mars{
+.jupiter {
     border-radius: 50%;
-    background-color: red;
-    height: 16rem;
-    width: 16rem;
-    position: absolute;
-    top: 35%;
-    left: 43%;
-    box-shadow:inset -20px 0 0 10px rgb(0, 0, 0, 0.3);
-}
-.jupiter{
-    border-radius: 50%;
-    background-color: #f5e9c8;
     width: 24rem;
     height: 24rem;
     position: absolute;
     top: 35%;
     left: 39%;
-    box-shadow:inset -30px 0 0 10px rgb(0,0,0,0.2);
+    box-shadow: inset -30px 0 20px 10px rgb(0, 0, 0, 0.5);
+    background: radial-gradient(circle at top,
+            #862d0c 0%,
+            #E4C9A8 10%,
+            #862d0c 20%,
+            #F5E8D3 30%,
+            #d76b42 40%,
+            #E4C9A8 50%,
+            #F5E8D3 60%,
+            #b74820 70%,
+            #E4C9A8 80%,
+            #F5E8D3 85%,
+            #862d0c 90%
+    );
 }
-.uranus{
-    border-radius: 50%;
-    background-color: #3b82f6;
-    width: 20rem;
-    height: 20rem;
+.jupiter-eye{
     position: absolute;
-    top: 35%;
-    left: 41%;
-    box-shadow: inset -20px 0 0 10px rgba(0,0,0,0.2);
+    width: 5rem;
+    height: 3rem;
+    background: radial-gradient(circle, #F5E8D3, #862d0c, #E4C9A8);
+    border-radius: 50%;
+    top: 65%;
+    left: 15%;
+    box-shadow: inset -5px 5px 10px 0 rgba(0, 0, 0, 0.2);
+    transform: rotate(10deg);
 }
 .saturn{
     border-radius: 50%;
@@ -166,12 +170,12 @@ a:hover{
     position: absolute;
     top: 35%;
     left: 40%;
-    box-shadow: inset -40px 0 0 rgba(0, 0, 0, 0.2);
+    box-shadow: inset -40px 0 0 0 rgba(0, 0, 0, 0.2);
 }
 .saturn-ring{
     width: 460px;
     height: 305px;
-    border: solid 80px #79a5ee;
+    border: solid 80px #7e7871;
     border-radius: 50%;
     position: absolute;
     transform: rotate3d(1, 0, -0.2, 75deg);
@@ -188,7 +192,7 @@ a:hover{
     left: 37rem;
     transform: rotate(-12deg);
     z-index: 3;
-    box-shadow: inset -40px 0 0 rgba(0, 0, 0, 0.2);
+    box-shadow: inset -40px 0 0 0 rgba(0, 0, 0, 0.2);
 }
 .up-saturn::before {
     content: "";
@@ -207,6 +211,16 @@ a:hover{
     width: 22rem;
     top: 0;
     left: 0;
+}
+.uranus{
+    border-radius: 50%;
+    background-color: #3b82f6;
+    width: 20rem;
+    height: 20rem;
+    position: absolute;
+    top: 35%;
+    left: 41%;
+    box-shadow: inset -20px 0 0 10px rgba(0,0,0,0.2);
 }
 .neptune{
     position: absolute;
