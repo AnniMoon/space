@@ -214,13 +214,37 @@ a:hover{
 }
 .uranus{
     border-radius: 50%;
-    background-color: #3b82f6;
     width: 20rem;
     height: 20rem;
     position: absolute;
     top: 35%;
     left: 41%;
-    box-shadow: inset -20px 0 0 10px rgba(0,0,0,0.2);
+    box-shadow: inset -20px 0 10px 10px rgba(0,0,0,0.2);
+    background:
+            radial-gradient(circle at top,
+            #305ead 10%,
+            #929fe8 20%,
+            #305ead 30%,
+            #929fe8 35%,
+            #305ead 50%,
+            white 55%,
+            #929fe8 60%,
+            #305ead 65%,
+            #929fe8 70%,
+            #305ead 75%,
+            #929fe8 90%
+            );
+}
+.uranus-eye{
+    position: absolute;
+    width: 5rem;
+    height: 3rem;
+    background: radial-gradient(circle, white, #305ead, #929fe8);
+    border-radius: 50%;
+    top: 53%;
+    left: 15%;
+    box-shadow: inset -5px 5px 10px 0 rgba(0, 0, 0, 0.2);
+    transform: rotate(10deg);
 }
 .neptune{
     position: absolute;
@@ -269,13 +293,13 @@ a:hover{
 }
 .pluto{
     border-radius: 50%;
-    background-color: #f5e9c8;
     width: 12rem;
     height: 12rem;
     position: absolute;
     top: 35%;
     left: 45%;
-    box-shadow: inset -20px 0 0 5px rgba(0,0,0,0.2);
+    box-shadow: inset -20px 0 30px 5px rgba(0,0,0,0.2);
+    background: radial-gradient(circle at 60% 60% , #f5e9c8 10%, #a89b8d 20%, #645757 50%, #7e7871 90%);
 }
 h1{
     display: flex;
