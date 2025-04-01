@@ -89,6 +89,7 @@ a:hover{
     position: absolute;
     box-shadow: inset -30px 0 20px 0 rgba(0, 0, 0, 0.5);
     background: radial-gradient(circle at center, #2B2B2B 5%, #555555 35%, #808080 55%, #BFBFBF 75%);
+    animation: rotateSlightly 2s infinite ease-in-out;
 }
 .venus{
     border-radius: 50%;
@@ -100,6 +101,7 @@ a:hover{
     position: absolute;
     top: 35%;
     left: 42%;
+    animation: pulse 5s infinite ease-in-out;
 }
 .mars{
     border-radius: 50%;
@@ -332,6 +334,12 @@ h1{
     0%{transform: rotate3d(1,1,1,0deg)}
     50%{transform: rotate3d(1,1,1,180deg)}
     100%{transform: rotate3d(1,1,1,360deg)}
+}
+@keyframes rotateSlightly {
+    0%{transform: rotate3d(0,1,0,0deg)}
+    25%{transform: rotate3d(0,1,0,7deg)}
+    50%{transform: rotate3d(0,1,0,12deg)}
+    25%{transform: rotate3d(0,1,0,7deg)}
 }
 @keyframes riseAndSet {
     0% {
