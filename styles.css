@@ -110,9 +110,9 @@ a:hover{
     position: absolute;
     top: 35%;
     left: 43%;
-    box-shadow:inset -10px 0 20px 10px rgb(0, 0, 0, 0.3);
+    box-shadow:inset -10px -10px 20px 10px rgb(0, 0, 0, 0.3);
     background: radial-gradient(circle at 40% 40%, #b74820 20%, #862d0c 40%, #6e0b1f 70%);
-    animation: changeColorOfMars 15s infinite ease-in-out;
+    animation: changeColorOfMars 5s infinite ease-in-out;
     transition-duration: 5s;
 }
 .earth {
@@ -122,9 +122,9 @@ a:hover{
     position: absolute;
     top: 35%;
     left: 42%;
-    background:
-            radial-gradient(circle at 40% 40%,
-    #3cb371 10%,
+    background: radial-gradient(circle at 40% 40%,
+    white 7%,
+    #3cb371 15%,
     #225b99 30%,
     #1e4d7a 50%,
     #0f2e4d 70%,
@@ -132,6 +132,7 @@ a:hover{
     );
     box-shadow: inset -10px -10px 20px rgba(0, 0, 0, 0.5),
     inset 10px -10px 20px rgba(0, 0, 0, 0.5);
+    animation: moveContinent 5s infinite ease-in-out;
 }
 .jupiter {
     border-radius: 50%;
@@ -360,4 +361,36 @@ h1{
     100% {
         transform: translateY(-600px);
     }
+}
+@keyframes moveContinent {
+    0%{background: radial-gradient(circle at 40% 40%, white 7%,
+    #3cb371 15%,
+    #225b99 30%,
+    #1e4d7a 50%,
+    #0f2e4d 70%,
+    #072441 90%)}
+    25%{background: radial-gradient(circle at 40% 40%, white 9%,
+    #3cb371 17%,
+    #225b99 32%,
+    #1e4d7a 52%,
+    #0f2e4d 72%,
+    #072441 92%)}
+    50%{background: radial-gradient(circle at 40% 40%, white 11%,
+    #3cb371 19%,
+    #225b99 34%,
+    #1e4d7a 54%,
+    #0f2e4d 74%,
+    #072441 94%)}
+    75%{background: radial-gradient(circle at 40% 40%, white 13%,
+    #3cb371 21%,
+    #225b99 36%,
+    #1e4d7a 56%,
+    #0f2e4d 76%,
+    #072441 96%)}
+    100%{background: radial-gradient(circle at 40% 40%, white 7%,
+    #3cb371 23%,
+    #225b99 38%,
+    #1e4d7a 58%,
+    #0f2e4d 78%,
+    #072441 98%)}
 }
