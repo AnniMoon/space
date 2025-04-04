@@ -132,7 +132,7 @@ a:hover{
     );
     box-shadow: inset -10px -10px 20px rgba(0, 0, 0, 0.5),
     inset 10px -10px 20px rgba(0, 0, 0, 0.5);
-    animation: moveContinent 5s infinite ease-in-out;
+    animation: pulseEarth 5s infinite ease-in-out;
 }
 .jupiter {
     border-radius: 50%;
@@ -141,7 +141,7 @@ a:hover{
     position: absolute;
     top: 35%;
     left: 39%;
-    box-shadow: inset -30px 0 20px 10px rgb(0, 0, 0, 0.5);
+    box-shadow: inset -30px 0 20px 25px rgb(0, 0, 0, 0.5);
     background: radial-gradient(circle at top,
             #862d0c 0%,
             #E4C9A8 10%,
@@ -164,8 +164,8 @@ a:hover{
     border-radius: 50%;
     top: 65%;
     left: 15%;
-    box-shadow: inset -5px 5px 10px 0 rgba(0, 0, 0, 0.2);
-    transform: rotate(10deg);
+    box-shadow: inset -5px 5px 5px 0 rgba(0, 0, 0, 0.2);
+    animation: scaleJupiterEye 2s infinite ease-in-out;
 }
 .saturn{
     border-radius: 50%;
@@ -315,7 +315,6 @@ h1{
     animation: changeColor 10s ease infinite;
 }
 /** KeyFrame Animationen */
-
 @keyframes blink {
     0%,100%{
         opacity: 1;
@@ -362,35 +361,18 @@ h1{
         transform: translateY(-600px);
     }
 }
-@keyframes moveContinent {
-    0%{background: radial-gradient(circle at 40% 40%, white 7%,
-    #3cb371 15%,
-    #225b99 30%,
-    #1e4d7a 50%,
-    #0f2e4d 70%,
-    #072441 90%)}
-    25%{background: radial-gradient(circle at 40% 40%, white 9%,
-    #3cb371 17%,
-    #225b99 32%,
-    #1e4d7a 52%,
-    #0f2e4d 72%,
-    #072441 92%)}
-    50%{background: radial-gradient(circle at 40% 40%, white 11%,
-    #3cb371 19%,
-    #225b99 34%,
-    #1e4d7a 54%,
-    #0f2e4d 74%,
-    #072441 94%)}
-    75%{background: radial-gradient(circle at 40% 40%, white 13%,
-    #3cb371 21%,
-    #225b99 36%,
-    #1e4d7a 56%,
-    #0f2e4d 76%,
-    #072441 96%)}
-    100%{background: radial-gradient(circle at 40% 40%, white 7%,
-    #3cb371 23%,
-    #225b99 38%,
-    #1e4d7a 58%,
-    #0f2e4d 78%,
-    #072441 98%)}
+@keyframes pulseEarth {
+     0%, 100% {
+         box-shadow: inset -15px -15px 25px rgba(0, 0, 0, 0.5),
+         inset 10px -10px 20px rgba(0, 0, 0, 0.5);
+     }
+     50% {
+         box-shadow: inset -30px -30px 50px rgba(0, 0, 0, 0.7),
+         inset 10px -10px 30px rgba(0, 0, 0, 0.7);
+     }
+ }
+@keyframes scaleJupiterEye {
+    0%{ transform: scale(1.2) rotate(15deg)}
+    50%{transform: scale(1.1) rotate(15deg)}
+    100%{transform: scale(1.2) rotate(15deg)}
 }
