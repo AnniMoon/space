@@ -155,6 +155,7 @@ a:hover{
             #F5E8D3 85%,
             #862d0c 90%
     );
+    animation: updown 5s infinite ease-in-out;
 }
 .jupiter-eye{
     position: absolute;
@@ -240,6 +241,7 @@ a:hover{
             #305ead 75%,
             #929fe8 90%
             );
+    animation: pulseEarth 4s infinite ease-in-out;
 }
 .uranus-eye{
     position: absolute;
@@ -251,6 +253,7 @@ a:hover{
     left: 15%;
     box-shadow: inset -5px 5px 10px 0 rgba(0, 0, 0, 0.2);
     transform: rotate(10deg);
+    animation: scaleJupiterEye 2s infinite ease-in-out;
 }
 .neptune{
     position: absolute;
@@ -271,6 +274,7 @@ a:hover{
     transform: rotate3d(1, 0, -0.2, 75deg);
     top: 9rem;
     left: 35rem;
+    animation: turnNeptuneRing 3s infinite ease-in-out;
 }
 .up-neptune {
     position: absolute;
@@ -306,6 +310,7 @@ a:hover{
     left: 45%;
     box-shadow: inset -20px 0 30px 5px rgba(0,0,0,0.2);
     background: radial-gradient(circle at 60% 60% , #f5e9c8 10%, #a89b8d 20%, #645757 50%, #7e7871 90%);
+    animation: extendPlutoSpot 2s infinite ease-in-out;
 }
 h1{
     display: flex;
@@ -314,6 +319,97 @@ h1{
     align-items: center;
     color: red;
     animation: changeColor 10s ease infinite;
+}
+/** Solar System*/
+.Sun{
+    border-radius: 50%;
+    background-color: yellow;
+    width: 17rem;
+    height: 17rem;
+    top: 80%;
+    right: 90%;
+    position: absolute;
+}
+.Mercury{
+    border-radius: 50%;
+    background-color: grey;
+    width: 8rem;
+    height: 8rem;
+    top: 69%;
+    left: 15%;
+    position: absolute;
+}
+.Venus{
+    border-radius: 50%;
+    background-color: beige;
+    width: 8rem;
+    height: 8rem;
+    top: 45%;
+    left: 5%;
+    position: absolute;
+}
+.Mars{
+    border-radius: 50%;
+    background-color: red;
+    width: 6rem;
+    height: 6rem;
+    top: 35%;
+    left: 15%;
+    position: absolute;
+}
+.Earth{
+    border-radius: 50%;
+    background-color: blue;
+    width: 8.5rem;
+    height: 8.5rem;
+    top: 30%;
+    left: 25%;
+    position: absolute;
+}
+.Jupiter{
+    border-radius: 50%;
+    background-color: beige;
+    width: 17rem;
+    height: 17rem;
+    top: 35%;
+    left: 35%;
+    position: absolute;
+}
+.Saturn{
+    border-radius: 50%;
+    background-color: beige;
+    width: 15rem;
+    height: 15rem;
+    top: 35%;
+    left: 45%;
+    position: absolute;
+}
+.Uranus{
+    border-radius: 50%;
+    background-color: blue;
+    width: 11.5rem;
+    height: 11.5rem;
+    top: 35%;
+    left: 60%;
+    position: absolute;
+}
+.Neptune{
+    border-radius: 50%;
+    background-color: blue;
+    width: 11rem;
+    height: 11rem;
+    top: 35%;
+    left: 73%;
+    position: absolute;
+}
+.Pluto{
+    border-radius: 50%;
+    background-color: grey;
+    width: 2rem;
+    height: 2rem;
+    top: 11%;
+    left: 95%;
+    position: absolute;
 }
 /** KeyFrame Animationen */
 @keyframes blink {
@@ -389,5 +485,44 @@ h1{
     }
     75%{
         transform: rotate3d(1, 0, -0.2, 80deg)
+    }
+}
+@keyframes updown{
+    0%{
+        transform: translateY(5px);
+    }
+    25%{
+        transform: translateY(10px);
+    }
+    50%{
+        transform: translateY(15px);
+    }
+    75%{
+        transform: translateY(10px);
+    }
+    100%{
+        transform: translateY(5px);
+    }
+}
+@keyframes turnNeptuneRing {
+    0%{
+        transform:rotate3d(1, 0, -0.2, 75deg) rotateY(5deg);
+    }
+    50%{
+        transform: rotate3d(1, 0, -0.2, 75deg) rotateY(10deg);
+    }
+    100%{
+        transform:rotate3d(1, 0, -0.2, 75deg) rotateY(5deg);
+    }
+}
+@keyframes extendPlutoSpot {
+    0%{
+        background: radial-gradient(circle at 60% 60% , #f5e9c8 10%, #a89b8d 20%, #645757 50%, #7e7871 90%);
+    }
+    50%{
+        background: radial-gradient(circle at 60% 60% , #f5e9c8 12%, #a89b8d 20%, #645757 50%, #7e7871 90%);
+    }
+    100%{
+        background: radial-gradient(circle at 60% 60% , #f5e9c8 10%, #a89b8d 20%, #645757 50%, #7e7871 90%);
     }
 }
