@@ -1,8 +1,10 @@
 body{
     margin: 0;
-    background-color: black;
+    /*background-color: black;*/
+    background: linear-gradient(to right, darkblue, black);
+
     overflow: hidden;
-    background-position: 90% top;
+    /*background-position: 90% top;*/
 }
 /*Navigation bar*/
 .nav-container{
@@ -321,6 +323,15 @@ h1{
     animation: changeColor 10s ease infinite;
 }
 /** Solar System*/
+.line{
+    background-color: #f81bf4;
+    border-radius: 20px;
+    position: absolute;
+    top: 70%;
+    left: 30%;
+    width: 3rem;
+    height: 10rem;
+}
 .Sun{
     border-radius: 50%;
     background-color: yellow;
@@ -335,8 +346,8 @@ h1{
     background-color: grey;
     width: 8rem;
     height: 8rem;
-    top: 69%;
-    left: 15%;
+    top: 75%;
+    left: 10%;
     position: absolute;
 }
 .Venus{
@@ -344,8 +355,8 @@ h1{
     background-color: beige;
     width: 8rem;
     height: 8rem;
-    top: 45%;
-    left: 5%;
+    top: 50%;
+    left: 7%;
     position: absolute;
 }
 .Mars{
@@ -354,7 +365,7 @@ h1{
     width: 6rem;
     height: 6rem;
     top: 35%;
-    left: 15%;
+    left: 20%;
     position: absolute;
 }
 .Earth{
@@ -362,8 +373,8 @@ h1{
     background-color: blue;
     width: 8.5rem;
     height: 8.5rem;
-    top: 30%;
-    left: 25%;
+    top: 55%;
+    left: 22%;
     position: absolute;
 }
 .Jupiter{
@@ -371,7 +382,7 @@ h1{
     background-color: beige;
     width: 17rem;
     height: 17rem;
-    top: 35%;
+    top: 25%;
     left: 35%;
     position: absolute;
 }
@@ -380,8 +391,8 @@ h1{
     background-color: beige;
     width: 15rem;
     height: 15rem;
-    top: 35%;
-    left: 45%;
+    top: 55%;
+    left: 55%;
     position: absolute;
 }
 .Uranus{
@@ -389,8 +400,8 @@ h1{
     background-color: blue;
     width: 11.5rem;
     height: 11.5rem;
-    top: 35%;
-    left: 60%;
+    top: 18%;
+    left: 65%;
     position: absolute;
 }
 .Neptune{
@@ -399,7 +410,7 @@ h1{
     width: 11rem;
     height: 11rem;
     top: 35%;
-    left: 73%;
+    left: 80%;
     position: absolute;
 }
 .Pluto{
