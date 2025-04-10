@@ -64,7 +64,6 @@ a:hover{
     filter: brightness(1.2);
     animation: riseAndSet 5s ease infinite;
 }
-/*x, y , blur, spread*/
 .sun{
     top: 30%;
     left: 37%;
@@ -323,107 +322,17 @@ h1{
     animation: changeColor 10s ease infinite;
 }
 /** Solar System*/
-.line{
-    border: 1px solid #92e3da;
-    background: transparent;
-    border-radius: 50%;
-    position: absolute;
-    top: 97%;
-    right: 71%;
-    width: 400px;
-    height: 400px;
-    transform: translate(-50%, -50%);
+#solar-system {
+    width: 100vw;
+    height: 100vh;
+    z-index: 2;
 }
-.Sun{
-    border-radius: 50%;
-    background-color: yellow;
-    width: 17rem;
-    height: 17rem;
-    top: 80%;
-    right: 90%;
-    position: absolute;
-}
-.Mercury{
-    border-radius: 50%;
-    background-color: grey;
-    width: 8rem;
-    height: 8rem;
-    top: 75%;
-    left: 10%;
-    position: absolute;
-    z-index: 1;
-}
-.Venus{
-    border-radius: 50%;
-    background-color: beige;
-    width: 8rem;
-    height: 8rem;
-    top: 50%;
-    left: 7%;
-    position: absolute;
-}
-.Mars{
-    border-radius: 50%;
-    background-color: red;
-    width: 6rem;
-    height: 6rem;
-    top: 35%;
-    left: 20%;
-    position: absolute;
-}
-.Earth{
-    border-radius: 50%;
-    background-color: blue;
-    width: 8.5rem;
-    height: 8.5rem;
-    top: 55%;
-    left: 22%;
-    position: absolute;
-}
-.Jupiter{
-    border-radius: 50%;
-    background-color: beige;
-    width: 17rem;
-    height: 17rem;
-    top: 25%;
-    left: 35%;
-    position: absolute;
-}
-.Saturn{
-    border-radius: 50%;
-    background-color: beige;
-    width: 15rem;
-    height: 15rem;
-    top: 55%;
-    left: 55%;
-    position: absolute;
-}
-.Uranus{
-    border-radius: 50%;
-    background-color: blue;
-    width: 11.5rem;
-    height: 11.5rem;
-    top: 18%;
-    left: 65%;
-    position: absolute;
-}
-.Neptune{
-    border-radius: 50%;
-    background-color: blue;
-    width: 11rem;
-    height: 11rem;
-    top: 35%;
-    left: 80%;
-    position: absolute;
-}
-.Pluto{
-    border-radius: 50%;
-    background-color: grey;
-    width: 2rem;
-    height: 2rem;
-    top: 11%;
-    left: 95%;
-    position: absolute;
+.orbit {
+    stroke: #92e3da;
+    stroke-width: 1;
+    fill: none;
+    opacity: 0.3;
+    z-index: 2;
 }
 /** KeyFrame Animationen */
 @keyframes blink {
