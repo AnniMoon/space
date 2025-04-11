@@ -52,6 +52,8 @@ a:hover{
     background-size: 300px 300px;
     animation: blink 5s infinite alternate;
     z-index: 1;
+    position: absolute;
+    pointer-events: none;
 }
 .moon {
     width: 15rem;
@@ -325,14 +327,20 @@ h1{
 #solar-system {
     width: 100vw;
     height: 100vh;
-    z-index: 2;
+    z-index: 3;
+    position: absolute;
 }
 .orbit {
     stroke: #92e3da;
+    background-color: yellow;
     stroke-width: 1;
     fill: none;
     opacity: 0.3;
-    z-index: 2;
+    z-index: 3;
+    position: absolute;
+}
+.orbit1{
+    fill: yellow;
 }
 /** KeyFrame Animationen */
 @keyframes blink {
