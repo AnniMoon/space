@@ -327,22 +327,31 @@ h1{
 #solar-system {
     width: 100vw;
     height: 100vh;
-    z-index: 3;
     position: absolute;
-}
-.orbit {
-    stroke: #92e3da;
-    background-color: yellow;
-    stroke-width: 1;
     fill: none;
-    opacity: 0.3;
-    z-index: 3;
-    position: absolute;
 }
-.orbit1{
-    fill: yellow;
+.orbit2 {
+    animation-duration: 18s;
+    fill: none;
+}
+.orbit3 {
+    animation-duration: 18s;
+    fill: none;
+}
+.orbit-group {
+    transform-origin: 400px 280px;
+    animation: rotateOrbit 10s linear infinite;
+    fill: none;
 }
 /** KeyFrame Animationen */
+@keyframes rotateOrbit {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
 @keyframes blink {
     0%,100%{
         opacity: 1;
