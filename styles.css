@@ -330,17 +330,57 @@ h1{
     position: absolute;
     fill: none;
 }
+.orbit1 {
+    animation: pulse 3s infinite ease-in-out;
+    filter: brightness(200%);
+}
 .orbit2 {
     animation-duration: 18s;
     fill: none;
+    animation: rotateOrbit 8s linear infinite;
 }
 .orbit3 {
     animation-duration: 18s;
     fill: none;
+    animation: rotateOrbit 10s linear infinite;
+}
+.orbit4 {
+    animation-duration: 18s;
+    fill: none;
+    animation: rotateOrbit 12s linear infinite;
+}
+.orbit5 {
+    animation-duration: 18s;
+    fill: none;
+    animation: rotateOrbit 14s linear infinite;
+}
+.orbit6 {
+    animation-duration: 18s;
+    fill: none;
+    animation: rotateOrbit 17s linear infinite;
+}
+.orbit7 {
+    animation-duration: 18s;
+    fill: none;
+    animation: rotateOrbit 20s linear infinite;
+}
+.orbit8 {
+    animation-duration: 18s;
+    fill: none;
+    animation: rotateOrbit 23s linear infinite;
+}
+.orbit9 {
+    animation-duration: 18s;
+    fill: none;
+    animation: rotateOrbit 26s linear infinite;
+}
+.orbit10 {
+    animation-duration: 18s;
+    fill: none;
+    animation: rotateOrbit 29s linear infinite;
 }
 .orbit-group {
     transform-origin: 400px 280px;
-    animation: rotateOrbit 10s linear infinite;
     fill: none;
 }
 /** KeyFrame Animationen */
