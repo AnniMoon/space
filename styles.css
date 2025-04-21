@@ -1,8 +1,7 @@
 body{
     margin: 0;
     /*background-color: black;*/
-    background: linear-gradient(to right, darkblue, black);
-
+    background: linear-gradient(to left,#0b3477, #06164b,#000000);
     overflow: hidden;
     /*background-position: 90% top;*/
 }
@@ -24,7 +23,7 @@ body{
             radial-gradient(white 1px, transparent 2px) 200px 80px,
             radial-gradient(white 1px, transparent 2px) 300px 150px,
             radial-gradient(white 1px, transparent 2px) 400px 200px,
-            linear-gradient(to bottom, #3b82f6, #1e40af, #000000);
+            linear-gradient(to left, #0b3477, #06164b,#000000);
     background-size: 300px 300px, auto;
 }
 a{
