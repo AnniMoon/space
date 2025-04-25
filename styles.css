@@ -36,6 +36,20 @@ a:hover{
     transform: scale(1.2);
     text-shadow: 0 0 10px white, 0 0 20px white, 0 0 30px white;
 }
+/*Info-Cards*/
+.info-card{
+    color: beige;
+    background: linear-gradient(to left,#0b3477, #06164b,#000000);
+    box-shadow: 15px 15px rgba(0, 0, 0, 0.2);
+    border-radius: 15%;
+    padding: 5px;
+    position: absolute;
+    top: 19rem;
+    right: 11rem;
+}
+.sun:hover{
+    visibility: visible;
+}
 /*celestial bodies*/
 .stars{
     top: 0;
@@ -138,11 +152,11 @@ a:hover{
 }
 .jupiter {
     border-radius: 50%;
-    width: 24rem;
-    height: 24rem;
+    width: 28rem;
+    height: 28rem;
     position: absolute;
-    top: 35%;
-    left: 39%;
+    top: 29%;
+    left: 36%;
     box-shadow: inset -30px 0 20px 25px rgb(0, 0, 0, 0.5);
     background: radial-gradient(circle at top,
             #862d0c 0%,
@@ -259,48 +273,48 @@ a:hover{
 }
 .neptune{
     position: absolute;
-    width:200px;
-    height: 200px;
+    width:20rem;
+    height: 20rem;
     border-radius:50%;
     background: blue;
     top: 15rem;
-    left: 41rem;
+    left: 39rem;
     box-shadow: inset -10px 10px rgba(0,0,0,0.2);
 }
 .neptune-ring {
-    width: 305px;
-    height: 305px;
+    width: 30rem;
+    height: 30rem;
     border: solid 50px #79a5ee;
     border-radius: 50%;
     position: absolute;
     transform: rotate3d(1, 0, -0.2, 75deg);
     top: 9rem;
-    left: 35rem;
+    left: 32rem;
     animation: turnNeptuneRing 3s infinite ease-in-out;
 }
 .up-neptune {
     position: absolute;
-    width:200px;
-    height: 100px;
-    border-radius:100px 100px 0 0;
+    width:20rem;
+    height: 10rem;
+    border-radius:10rem 10rem 0 0;
     background: blue;
     top: 15rem;
-    left: 41rem;
+    left: 39rem;
 }
 .up-neptune:before {
     content: "";
     position: absolute;
-    width: 100px;
-    height: 25px;
+    width: 10rem;
+    height: 5rem;
     border-radius: 20px;
     left: 70px;
 }
 .up-neptune:after {
     content:"";
     position: absolute;
-    width:200px;
-    height: 100px;
-    border-radius:100px 100px 0 0;
+    width:20rem;
+    height: 10rem;
+    border-radius:10rem 10rem 0 0;
     box-shadow: inset -10px 10px rgba(0,0,0,0.2);
 }
 .pluto{
