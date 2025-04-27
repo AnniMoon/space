@@ -44,10 +44,15 @@ a:hover{
     border-radius: 15%;
     padding: 5px;
     position: absolute;
-    top: 19rem;
-    right: 11rem;
+    top: 10rem;
+    right: 5rem;
+    visibility: hidden;
+    transition: 0.5s ease-in-out;
 }
-.sun:hover{
+.headline{
+    text-align: center;
+}
+.sun:hover .info-card{
     visibility: visible;
 }
 /*celestial bodies*/
@@ -288,8 +293,8 @@ a:hover{
     border-radius: 50%;
     position: absolute;
     transform: rotate3d(1, 0, -0.2, 75deg);
-    top: 9rem;
-    left: 32rem;
+    top: 7rem;
+    left: 31rem;
     animation: turnNeptuneRing 3s infinite ease-in-out;
 }
 .up-neptune {
