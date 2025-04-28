@@ -43,6 +43,7 @@ a:hover{
     box-shadow: 15px 15px rgba(0, 0, 0, 0.2);
     border-radius: 15%;
     padding: 5px;
+    width: 250px;
     position: absolute;
     top: 10rem;
     right: 5rem;
@@ -53,6 +54,24 @@ a:hover{
     text-align: center;
 }
 .sun:hover .info-card{
+    visibility: visible;
+}
+.mercury:hover .info-card{
+    visibility: visible;
+}
+.venus:hover .info-card{
+    visibility: visible;
+}
+.mars:hover .info-card{
+    visibility: visible;
+}
+.earth:hover .info-card{
+    visibility: visible;
+}
+.jupiter:hover .info-card{
+    visibility: visible;
+}
+.saturn:hover .info-card{
     visibility: visible;
 }
 /*celestial bodies*/
