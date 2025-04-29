@@ -71,7 +71,16 @@ a:hover{
 .jupiter:hover .info-card{
     visibility: visible;
 }
-.saturn:hover .info-card{
+.up-saturn:hover .info-card{
+    visibility: visible;
+}
+.uranus:hover .info-card{
+    visibility: visible;
+}
+.up-neptune:hover .info-card{
+    visibility: visible;
+}
+.pluto:hover .info-card{
     visibility: visible;
 }
 /*celestial bodies*/
