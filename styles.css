@@ -110,7 +110,23 @@ a:hover{
     top: 15%;
     right: 10%;
     filter: brightness(1.2);
-    animation: riseAndSet 5s ease infinite;
+    animation: riseAndSetMoon 7s ease infinite;
+}
+.sun-small{
+    top: 15%;
+    left: 10%;
+    width: 15rem;
+    height: 15rem;
+    position: absolute;
+    border-radius: 50%;
+    background: radial-gradient(circle,
+    #fff77e 15%,
+    #ffcc00 30%,
+    #ff6600 60%,
+    #D00000 85%,
+    transparent 100%);
+    animation-delay: 2s;
+    animation: riseAndSetSun 7s ease infinite;
 }
 .sun{
     top: 30%;
@@ -126,7 +142,6 @@ a:hover{
     #D00000 85%,
     transparent 100%);
     filter: brightness(1.2);
-   /* animation: pulse 2s infinite; */
     animation: pulse 2s linear infinite;
 }
 .mercury{
@@ -373,6 +388,7 @@ h1{
 #solar-system {
     width: 100vw;
     height: 100vh;
+    top: 130px;
     position: absolute;
     fill: none;
 }
@@ -476,14 +492,31 @@ h1{
     50%{transform: rotate3d(0,1,0,12deg)}
     25%{transform: rotate3d(0,1,0,7deg)}
 }
-@keyframes riseAndSet {
+@keyframes riseAndSetSun {
     0% {
         transform: translateY(700px);
+    }
+    50%{
+        transform: translateY(-80px);
+
     }
     100% {
         transform: translateY(-600px);
     }
 }
+@keyframes riseAndSetMoon {
+    0% {
+        transform: translateY(-600px);
+    }
+    50%{
+        transform: translateY(-80px);
+
+    }
+    100% {
+        transform: translateY(700px);
+    }
+}
+
 @keyframes pulseEarth {
      0%, 100% {
          box-shadow: inset -15px -15px 25px rgba(0, 0, 0, 0.5),
